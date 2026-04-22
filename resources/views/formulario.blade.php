@@ -45,7 +45,6 @@
         <h1>Formulario de usuario</h1>
 
         <form method="POST" action="/procesar">
-            @csrf
 
             <label>Nombre:</label><br>
             <input type="text" name="nombre">
