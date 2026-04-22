@@ -25,4 +25,4 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 # En Railway, el puerto es dinámico. Usamos el comando "serve" de Laravel directamente.
 # Esto evita todos los errores de configuración de Apache.
-CMD php artisan serve --host=0.0.0.0 --port=$PORT
+CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT
